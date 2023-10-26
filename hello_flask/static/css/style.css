@@ -1,0 +1,27 @@
+body{
+    display:flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.table{
+    border-style: solid;
+    border-color: #b5b5b5;
+    font-size: 30px;
+    width: 500px;
+    height: 300px;
+}
+
+.tabletop{
+    background-color: gray;
+    margin-left: 20px;
+}
+
+.inside{
+    border-color: #b5b5b5;
+    border-style: solid;
+}
+
+.header{
+    font-style: bold;
+}

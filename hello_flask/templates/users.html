@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css/style.css')}}">
+</head>
+<body>
+    <table class="table">
+        <thead class="tabletop">
+            <tr>
+                <th class="header">First Name</th>
+                <th class="header">Last Name</th>
+                <th class="header">Full Name</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for dictionary in users %}
+            <tr>
+                <td class="inside">{{dictionary['first_name']}}</td>
+                <td class="inside">{{dictionary['last_name']}}</td>
+                <td class="inside">{{dictionary['first_name']}} {{dictionary['last_name']}}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+
+    <script scr="{{url_for('static', filename='script.js')}}"></script>
+</body>
+</html>
